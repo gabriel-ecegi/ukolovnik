@@ -9,7 +9,6 @@ import {
   ListItem,
   ListItemButton,
   ListItemIcon,
-  ListItemText,
   Theme,
   Stack,
 } from "@mui/material";
@@ -32,7 +31,7 @@ type Props = {
   title: string;
 };
 
-const drawerWidth = 240;
+const drawerWidth = 50;
 
 const StyledBox = styled(Box)`
   display: flex;
@@ -146,8 +145,14 @@ export const AuthenticatedLayout: FC<PropsWithChildren<Props>> = ({
                   <UnstyledLink to={item.to} key={item.text}>
                     <StyledListItem disablePadding>
                       <ListItemButton>
-                        <ListItemIcon>{item.icon}</ListItemIcon>
-                        <ListItemText primary={item.text} />
+                        <ListItemIcon
+                          sx={{
+                            minWidth: "10px",
+                          }}
+                        >
+                          {item.icon}
+                        </ListItemIcon>
+                        {/* <ListItemText primary={item.text} /> */}
                       </ListItemButton>
                     </StyledListItem>
                   </UnstyledLink>
