@@ -1,7 +1,4 @@
-import { useUserInfoQuery } from "Auth/Api/Queries/useUserInfoQuery";
 import { ApplicationErrorPage } from "Infrastructure/Pages/ApplicationErrorPage";
-import { AppRouting, getPath } from "Infrastructure/Utils/UrlUtils";
-import { Navigate } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 
 type Props = {};

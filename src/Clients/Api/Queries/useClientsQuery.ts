@@ -29,9 +29,7 @@ export const mockClients = [
   },
 ];
 
-const getMockClients = (
-  headers = new Headers()
-): Promise<GetClientsFetchResponse> => {
+const getMockClients = (): Promise<GetClientsFetchResponse> => {
   return Promise.resolve({
     status: 200,
     data: mockClients,

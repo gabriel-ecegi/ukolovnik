@@ -11,7 +11,6 @@ import {
   ListItemIcon,
   ListItemText,
   Theme,
-  Button,
   Stack,
 } from "@mui/material";
 import {
@@ -27,9 +26,7 @@ import TaskIcon from "@mui/icons-material/Assignment";
 import { Resources, useResource } from "Infrastructure/Translations/Resources";
 import { UnstyledLink } from "Shared/Routing/UnstyledLink";
 import { AppRouting, getPath } from "Infrastructure/Utils/UrlUtils";
-import LogoutIcon from "@mui/icons-material/Logout";
 import { useUserInfoQuery } from "Auth/Api/Queries/useUserInfoQuery";
-import { useSignOutMutation } from "Auth/Api/Mutations/useSignOutMutation";
 
 type Props = {
   title: string;
@@ -103,7 +100,6 @@ export const AuthenticatedLayout: FC<PropsWithChildren<Props>> = ({
   const { data } = useUserInfoQuery();
 
   const userLogin = data?.data?.login;
-  const { mutate: signOut } = useSignOutMutation();
 
   return (
     <StyledBox>

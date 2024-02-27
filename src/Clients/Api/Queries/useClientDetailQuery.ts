@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { GetClientsIdFetchResponse, apiGet } from "Infrastructure/Api/Api";
+import { GetClientsIdFetchResponse } from "Infrastructure/Api/Api";
 import { mockClients } from "./useClientsQuery";
-// import { getClientsId } from "Infrastructure/Api/Api";
 
 export const CLIENT_DETAIL_QUERY_KEY = "CLIENT_DETAIL_QUERY";
 
@@ -15,8 +14,7 @@ export function useClientDetailQuery(id: number) {
 }
 
 export const getClientsId = (
-  id: number,
-  headers = new Headers()
+  id: number
 ): Promise<GetClientsIdFetchResponse> => {
   return Promise.resolve({
     status: 200,
