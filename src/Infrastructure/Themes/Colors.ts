@@ -1,0 +1,26 @@
+import { ColorsType } from "Infrastructure/Themes/Themes";
+
+export const colors = (): ColorsType => ({
+  PrimaryMain: "#00C0A9",
+  PrimaryDark: "#00C0A9",
+  PrimaryText: "#ffffff",
+  Body: "#ffffff",
+  Red: "#FF6690",
+  Warning: "#F7B500",
+  WarningLight: "#FACC15",
+  Green: "#70f0a6",
+  Text: "#233145",
+  TextLight: "#64748B",
+  TextDisabled: "#2f2c2766",
+  Black: "#000000",
+  White: "#ffffff",
+  Gray: "#F1F5F9",
+  Border: "#CBD5E1",
+  DarkGrey: "#334155",
+  Validation: "#FF6690",
+  Placeholder: "#8E98A7",
+  FieldBackground: "#F8FAFC",
+  ContentWrapperBorder: "#E2E8F0",
+  RadioBtnDisabled: "#EBEEF1",
+  WorkflowIcon: "#DFE5F1",
+});
